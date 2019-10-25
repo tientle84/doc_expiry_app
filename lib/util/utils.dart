@@ -88,7 +88,7 @@ class DateUtils {
     return ft.year.toString() + "-" + ft.month.toString().padLeft(2, "0") + "-" + ft.day.toString().padLeft(2, "0");
   }
 
-  static String TrimDate(String dt) {
+  static String trimDate(String dt) {
     if (dt.contains(" ")) {
       List<String> p = dt.split(" ");
       return p[0];
