@@ -1,11 +1,13 @@
 import '../util/utils.dart';
 
-class Doc {
+class Doc
+{
   int id;
   String title;
   String expiration;
 
   int fqYear;
+
   int fqHalfYear;
   int fqQuarter;
   int fqMonth;
@@ -27,7 +29,7 @@ class Doc {
     map["fqQuarter"] = this.fqQuarter;
     map["fqMonth"] = this.fqMonth;
 
-    if(id != null) {
+    if (id != null) {
       map["id"] = id;
     }
 
@@ -37,7 +39,7 @@ class Doc {
   Doc.fromObject(dynamic o) {
     this.id = o["id"];
     this.title = o["title"];
-    this.expiration = DateUtils.TrimDate(o["expiration"]);
+    this.expiration = DateUtils.trimDate(o["expiration"]);
 
     this.fqYear = o["fqYear"];
     this.fqHalfYear = o["fqHalfYear"];

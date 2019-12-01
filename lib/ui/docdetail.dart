@@ -194,8 +194,7 @@ class DocDetailState extends State<DocDetail> {
                               labelText: 'Expiry Date'
                           ),
                           keyboardType: TextInputType.number,
-                          validator: (val) => DateUtils.isValidDate(val) ? null :
-                          'Not a valid future date',
+                          validator: (val) => DateUtils.isValidDate(val) ? null : 'Not a valid future date',
                         )),
                     IconButton(
                       icon: new Icon(Icons.more_horiz),
